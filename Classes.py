@@ -237,6 +237,3 @@ class itens:
         
       self.medias = medias_aux
       self.demandas = y_item
-
-
-print('oi')
