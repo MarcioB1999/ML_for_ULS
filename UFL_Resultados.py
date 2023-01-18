@@ -35,6 +35,7 @@ with open("modelos_binarios", "rb") as arquivo_binario:
         break
 
 
+
 datafile = "UFL_instancia.txt"
 
 resultados_dataframe_1 = pd.DataFrame(resultados(datafile,200,modelos,0))
@@ -42,4 +43,4 @@ resultados_dataframe_2 = pd.DataFrame(resultados(datafile,200,modelos,1))
 
 
 resultados_dataframe_1.to_csv('Resultados_PI_RR')
-resultados_dataframe_1.to_csv('Resultados_PI_RN')
+resultados_dataframe_2.to_csv('Resultados_PI_RN')
