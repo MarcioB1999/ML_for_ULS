@@ -27,7 +27,7 @@ def resultados(datafile,n,modelos,indice):
   return a
 
 
-with open("modelos_binarios", "rb") as arquivo_binario:
+with open("Resultados/modelos_binarios", "rb") as arquivo_binario:
   while True:
     try:
         modelos = pickle.load(arquivo_binario)
@@ -36,11 +36,11 @@ with open("modelos_binarios", "rb") as arquivo_binario:
 
 
 
-datafile = "UFL_instancia.txt"
+datafile = "Resultados/UFL_instancia.txt"
 
 resultados_dataframe_1 = pd.DataFrame(resultados(datafile,200,modelos,0))
 resultados_dataframe_2 = pd.DataFrame(resultados(datafile,200,modelos,1))
 
 
-resultados_dataframe_1.to_csv('Resultados_PI_RR')
-resultados_dataframe_2.to_csv('Resultados_PI_RN')
+resultados_dataframe_1.to_csv('Resultados/Resultados_PI_RF')
+resultados_dataframe_2.to_csv('Resultados/Resultados_PI_RN')
