@@ -35,14 +35,14 @@ class ulsr:
     N = int(linhas[0])
   #  N = 5 
       
-    H = np.zeros(N)
-    P = np.zeros(N)
-    F = np.zeros(N)
+    H = np.zeros(N)#custo no estoque
+    P = np.zeros(N)#custo unitário
+    F = np.zeros(N)#custo fixo
     HR = np.zeros(N)
     PR = np.zeros(N)
     FR = np.zeros(N)
-    D = np.zeros(N)
-    R = np.zeros(N)
+    D = np.zeros(N)#demanda
+    R = np.zeros(N)#remanufatura
     
 
     FR = [float(linhas[1]) for i in range(N)]
